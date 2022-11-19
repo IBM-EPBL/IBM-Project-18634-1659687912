@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>
+AI-powered Nutrition Analyzer for Fitness Enthusiasts
+</title>
+</head>
+<style>
+
+	#wrapper
+	{
+	 text-align:center;
+	 margin:0 auto;
+	 padding:0px;
+	 width:995px;
+	}
+	#output_image
+	{
+	 max-width:300px;
+	}
+        body {
+	  background-image: url('img_upload.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+	}
+        .container{  
+            text-align: left;   
+            width: 1350px;  
+            height: 500px;  
+            padding-top: 50px; 
+	     
+        }  
+	.topnav {
+	  overflow: hidden;
+	  background-color: black;
+	}
+	.topnav a {
+  	  float: left;
+  	  color: #f2f2f2;
+  	  text-align: center;
+  	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	.topnav a.active {
+	  background-color: #ddd;
+	  color: black;
+	}
+        form.ex1 {
+            margin: auto;
+            border: 6px solid nocolor; 
+            background-color: #D5A7A7;
+            width: 300px;
+            height: 350px;
+            padding: 40px 55px 30px;
+            text-align: center;
+        }
+	img{
+		  max-width:180px;
+		}
+		input[type=file]{
+		padding:10px;
+		background:#2d2d2d;
+	}
+	.form-input img {
+	  width:100%;
+ 	  display:none;
+	  margin-bottom:30px;
+	}
+	.form-input input {
+	  display:none;
+	}
+	.form-input label {
+	  display:block;
+	  width:45%;
+	  height:45px;
+	  margin-left: 25%;
+	  line-height:50px;
+	  text-align:center;
+	  background:#1172c2;
+	  color:#fff;
+	  font-size:15px;
+	  font-family:"Open Sans",sans-serif;
+	  text-transform:Uppercase;
+	  font-weight:600;
+	  border-radius:5px;
+	  cursor:pointer;
+	}
+        </style>
+	<script>
+	  function showPreview(event){
+	  if(event.target.files.length > 0){
+	    var src = URL.createObjectURL(event.target.files[0]);
+	    var preview = document.getElementById("file-ip-1-preview");
+	    preview.src = src;
+	    preview.style.display = "block";
+	  }
+	}
+	</script>
+    <body>
+    <center><h1 style="color:black"><b>AI-powered Nutrition Analyzer for Fitness Enthusiasts</b></h1></center>
+    <div class="topnav">
+              <a class="active" href="home.html"><b>HOME</b></a>
+  	      <a href="image.html"><b>NUTRITION</b></a>
+              <a href="#dashboard.html"><b>DASHBOARD</b></a>
+    </div>
+    <div class="container">
+        <form class="ex1" method="get">
+            <center><h1>Upload image to classify</h1></center>
+		<input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+		 <center><div class="preview">
+  			 <img id="file-ip-1-preview">
+		 </div>
+	<br>
+	<input type="Submit" value="Classify">
+	</center>
+        </form>
+    </div>
+    </body>
+</html>
