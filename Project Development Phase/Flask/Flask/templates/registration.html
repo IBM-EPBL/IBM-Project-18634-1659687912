@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>
+AI-powered Nutrition Analyzer for Fitness Enthusiasts
+</title>
+</head>
+        <style>
+        body {
+	  background-image: url('img_background.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+	}
+        .container{  
+        text-align: center;   
+        width: 1350px;  
+        height: 300px;  
+        padding-top: 105px;  
+        }  
+	.topnav {
+	  overflow: hidden;
+	  background-color: black;
+	}
+	.topnav a {
+  	  float: left;
+  	  color: #f2f2f2;
+  	  text-align: center;
+  	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	.topnav a.active {
+	  background-color: #ddd;
+	  color: black;
+	}
+        form.ex1 {
+            margin: auto;
+            border: 6px solid lightgrey; 
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+            padding: 40px 55px 30px;
+            text-align: center;
+        }
+        </style>
+    <body>
+    <center><h1 style="color:white"><b>AI-powered Nutrition Analyzer for Fitness Enthusiasts</b></h1></center>
+    <div class="topnav">
+              <a class="active" href="home.html"><b>HOME</b></a>
+  	      <a href="image.html"><b>NUTRITION</b></a>
+              <a href="dashboard.html"><b>DASHBOARD</b></a>
+    </div>
+    <div class="container">
+        <form class="ex1" method="get" action="signupServlet">
+            <center><h1>LOGIN</h1></center>
+            <table style="font-size:150%">
+		<tr><td>NAME </td><td>:</td><td><input type="name" name="name"></td> </tr>
+                <tr><td>USERNAME </td><td>:</td><td><input type="text" name="user"></td> </tr>
+                <tr><td>PASSWORD </td><td>:</td><td><input type="password" name="pass"></td> </tr>
+		<tr><td>EMAIL </td><td>:</td><td><input type="mail" name="mail"></td> </tr>
+                <tr><td>PHONE NUMBER </td><td>:</td><td><input type="ph" name="ph"></td> </tr>
+	    </table>
+            <center>
+		<input type="submit" value="Signup!!"><br>
+		Already have an account?
+		<a href="home.html">Click Here</a>                                                                                        
+	    </center>
+        </form></div>
+    </body>
+</html>
